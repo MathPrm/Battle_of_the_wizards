@@ -68,10 +68,10 @@ class Wizard(Personnage):
         
     # abtract methods from Personnage interface
     def fighting_move(self, opponent: str, attack_strength: int) -> None:
-        print(f"{self.name} a lancé une attaque basique de {attack_strength} dégâtssur {opponent}.\n")
+        print(f"{self.__name} a lancé une attaque basique de {attack_strength} dégâtssur {opponent}.\n")
         
     def dodge(self) -> None:
         print(f"attaque esquivée !\n")
         
     def damages_taken(self, opponent: str, attack_strength: int) -> None:
-        print(f"{opponent} a subi {attack_strength} dégâts.")
+        print(f"{opponent} a fait subir {attack_strength} dégâts à {self.__name}.")
