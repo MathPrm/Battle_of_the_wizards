@@ -15,7 +15,7 @@ class Personnage(ABC):
         ...
         
     @abstractmethod
-    def dodge() -> None:
+    def dodge(self) -> None:
         '''
         This function allow the character to dodge an attack.
         '''
