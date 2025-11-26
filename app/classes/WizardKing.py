@@ -1,14 +1,14 @@
 from .Wizard import Wizard
 from .Personnage import Personnage
 
-class WhiteWizard(Wizard):
+class WizardKing(Wizard):
     
     def __init__(self, name: str, turn: str):
-        # White Wizard specific attacks
+        # Wizard King specific attacks
         moves = [
-            {"name": "Tornade Givrée 🌪️", "damage": 12, "xp_gain": 2},
+            {"name": "Boule de feu 🔥", "damage": 12, "xp_gain": 2},
             {"name": "Coup de Bâton 🪵", "damage": 5, "xp_gain": 1},
-            {"name": "Éclair Foudroyant ⚡", "damage": 20, "xp_gain": 4}
+            {"name": "Tempête Émotionnelle : AAAAAH! Rends-moi mon anneau!!! 💫", "damage": 20, "xp_gain": 4}
         ]
         super().__init__(name, moves, turn)
     

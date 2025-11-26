@@ -4,8 +4,20 @@ from abc import ABC, abstractmethod
 
 class Personnage(ABC):
     
+    @property
     @abstractmethod
-    def fighting_move(self, opponent: str, attack_strength: int) -> None:
+    def name(self) -> str:
+        """Méthode getter pour le nom"""
+        ...
+        
+    @property
+    @abstractmethod
+    def xp(self) -> int:
+        """Méthode getter pour l'expérience"""
+        ...
+    
+    @abstractmethod
+    def fighting_move(self, opponent: 'Personnage', attack_strength: int) -> None:
         '''
         This function allow the character to use a fighting move.
         Args:
@@ -15,14 +27,14 @@ class Personnage(ABC):
         ...
         
     @abstractmethod
-    def dodge(self) -> None:
+    def dodge(self) -> bool:
         '''
         This function allow the character to dodge an attack.
         '''
         ...
         
     @abstractmethod
-    def damages_taken(self, opponent: str, attack_strength: int) -> None:
+    def damages_taken(self, opponent: 'Personnage', attack_strength: int) -> None:
         '''
         This function calculate the damages taken by the character.
         Args:
