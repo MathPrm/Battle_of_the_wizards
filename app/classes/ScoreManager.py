@@ -14,8 +14,8 @@ class ScoreManager:
         p1_hp = max(0, self.player1.health - self.player1.damages)
         p2_hp = max(0, self.player2.health - self.player2.damages)
         
-        print(f"🧙 {self.player1.turn} {self.player1.name}: {p1_hp} PV | {self.player1.xp}")
-        print(f"👑 {self.player2.turn} {self.player2.name}: {p2_hp} PV | {self.player2.xp}")
+        print(f"🧙 {self.player1.turn} {self.player1.name}: {p1_hp} PV | {self.player1.xp} XP")
+        print(f"👑 {self.player2.turn} {self.player2.name}: {p2_hp} PV | {self.player2.xp} XP")
         print("-" * 100)
         
     def battle(self) -> None:
@@ -27,7 +27,7 @@ class ScoreManager:
         game_over = False
         
         while not game_over:
-            print(f"\n🔔 Tour n°{turn_count} : C'est au {attacker.turn} de jouer ({attacker.name}) ---")
+            print(f"\n🔔 Tour n°{turn_count} : C'est à {attacker.name} de jouer")
             attacker.fighting_move(defender)
             self.display_stats()
             
