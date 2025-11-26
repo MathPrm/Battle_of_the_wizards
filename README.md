@@ -1,8 +1,8 @@
-🧙‍♂️ ##Duel de Sorciers - Simulateur de Combat##
+##🧙‍♂️ Duel de Sorciers - Simulateur de Combat##
 
 Bienvenue dans le Duel de Sorciers, un simulateur de combat au tour par tour écrit en Python. Ce projet met en scène un affrontement épique entre deux puissants magiciens, utilisant des concepts clés de la Programmation Orientée Objet (POO).
 
-📋 #Fonctionnalités#
+#📋 Fonctionnalités#
 
 - Combat au tour par tour : Les joueurs attaquent alternativement jusqu'à ce que les points de vie (PV) de l'un d'eux tombent à zéro.
 
