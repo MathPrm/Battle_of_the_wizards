@@ -10,7 +10,7 @@ class WhiteWizard(Wizard):
             {"name": "Coup de Bâton 🪵", "damage": 5, "xp_gain": 1},
             {"name": "Éclair Foudroyant ⚡", "damage": 20, "xp_gain": 4}
         ]
-        super().__init__(name, moves, turn)
+        super().__init__(name, moves, 'joueur 1')
     
     def fighting_move(self, opponent: Personnage, attack_strength: int = 0) -> None:
         return super().fighting_move(opponent, attack_strength)
